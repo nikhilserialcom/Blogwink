@@ -6,7 +6,7 @@ let Categories = document.querySelectorAll(".Categories");
 let icon_i = document.querySelectorAll(".icon i");
 let title_text_p = document.querySelectorAll(".title_text p");
 const categoryUrl = "api/categories";
-// const categoryPosturl = "api/categoryPost";
+const categoryPosturl = "api/categoryPost";
 const category_data = document.querySelector('.category_data'); 
 
 

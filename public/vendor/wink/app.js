@@ -586,7 +586,7 @@
 					}
 				}, [n("span", {
 					staticClass: "text-light"
-				}, [t._v("W")]), t._v("ink.\n                    ")])], 1), t._v(" "), t._t("left-side")], 2), t._v(" "), n("div", {
+				}, [t._v("MY")]), t._v("Blog.\n                    ")])], 1), t._v(" "), t._t("left-side")], 2), t._v(" "), n("div", {
 					staticClass: "flex items-center"
 				}, [t._t("right-side"), t._v(" "), n("dropdown", {
 					staticClass: "relative ml-6"
@@ -627,14 +627,16 @@
 				}, [t._v("\n                            Posts\n                        ")]), t._v(" "), n("router-link", {
 					staticClass: "no-underline text-text-color hover:text-primary w-full block py-2 px-4",
 					attrs: {
-						to: "/pages"
-					}
-				}, [t._v("\n                            Pages\n                        ")]), t._v(" "), n("router-link", {
-					staticClass: "no-underline text-text-color hover:text-primary w-full block py-2 px-4",
-					attrs: {
 						to: "/tags"
 					}
-				}, [t._v("\n                            Tags\n                        ")]), t._v(" "), n("router-link", {
+				}, 
+				// [t._v("\n                            Pages\n                        ")]), t._v(" "), n("router-link", {
+				// 	staticClass: "no-underline text-text-color hover:text-primary w-full block py-2 px-4",
+				// 	attrs: {
+				// 		to: "/tags"
+				// 	}
+				// }, 
+				[t._v("\n                            Tags\n                        ")]), t._v(" "), n("router-link", {
 					staticClass: "no-underline text-text-color hover:text-primary w-full block py-2 px-4",
 					attrs: {
 						to: "/team"

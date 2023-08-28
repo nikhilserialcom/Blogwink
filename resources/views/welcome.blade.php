@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card_main all_recent recent_data ">
+            <div class="card_main all_recent recent_data">
                     {{-- <div class="card">
                         <div class="img_div">
                             <img src="{{ asset('image/top.png') }}" alt="">
@@ -143,8 +143,8 @@
                             </div>
                         </div>
                     </div> --}}
+            {{-- </div> --}}
             </div>
-
         </div>
 
         <div class="popular_articals">

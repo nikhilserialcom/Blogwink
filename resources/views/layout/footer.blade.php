@@ -15,7 +15,7 @@
                 <ul>
                     <a href="{{ url('api/categoryPost/Anime') }}"><li>Anime</li></a>
                     <a href="{{ url('api/categoryPost/Game') }}"><li>Game</li></a>
-                    <a href="{{ url('api/categoryPost/Movie') }}"><li>Movie</li></a>
+                    <a href="{{ url('api/categoryPost/MovieS') }}"><li>Movie</li></a>
                     <a href="{{ url('api/categoryPost/Healthcare') }}"><li>Healthcare</li></a>
                     <a href="{{ url('api/categoryPost/Food') }}"><li>Food</li></a>
                 </ul>

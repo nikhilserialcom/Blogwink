@@ -1,6 +1,8 @@
 var Scheme = window.location.protocol;
-var hostname = window.location.hostname;
-var SchemeAndHttpHost = Scheme + '//' + hostname;
+var hostname = window.location.hostname + ":" + window.location.port;
+var SchemeAndHttpHost = Scheme + '//' + hostname ;
+// console.log(SchemeAndHttpHost);
+
 
 const search_input_icon = document.querySelector('.search_input_icon');
 const search_input_icon_i = document.querySelectorAll('.search_input_icon i');
@@ -13,8 +15,8 @@ const moon = document.querySelector('.moon');
 
 // console.log(social_icon);
 
-const serach_url = "api/search";
-const search_page = "api/search-result";
+const serach_url = SchemeAndHttpHost + "/" + "api/search";
+const search_page = SchemeAndHttpHost + "/" + "api/search-result";
 // const blog_url = "api/blog";
 // const category_post = "api/categoryPost";
 const search_input = document.querySelector('.search');
@@ -52,21 +54,25 @@ let func_for_dark_mode = () => {
     body.classList.add('dark');
     sun.classList.remove('clicked');
     moon.classList.add('clicked');
+    // images.src = "images/Group 3586.svg";
 };
 let func_for_light_mode = () => {
     localStorage.setItem('theme', 'light');
     body.classList.remove('dark');
     moon.classList.remove('clicked');
     sun.classList.add('clicked');
+    // images.src = "images/logo.png";
 };
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark');
     sun.classList.remove('clicked');
     moon.classList.add('clicked');
+    // images.src = "images/Group 3586.svg";
 } else {
     body.classList.remove('dark');
     moon.classList.remove('clicked');
     sun.classList.add('clicked');
+    // images.src = "images/logo.png";
 }
 sun.addEventListener('click', func_for_light_mode);
 moon.addEventListener('click', func_for_dark_mode);
