@@ -123,7 +123,8 @@ class HomeController extends Controller
                                 })
                                 ->get();
         if ($searchResult->isEmpty()) {
-            $data = ['title' => $search,'message' =>  "No data found"];
+            $data = ['title' => $search,'message' =>  'No data found'];
+            return view('search-result')->with($data);
         }
         $data = ['title' => $search,'posts' => $searchResult,'message' => ''];
 

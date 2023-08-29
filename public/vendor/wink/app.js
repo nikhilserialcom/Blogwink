@@ -88,7 +88,7 @@
 					}
 				},
 				mounted: function() {
-					document.title = "Author — Wink.", this.loadEntry()
+					document.title = "Author — MYBlog.", this.loadEntry()
 				},
 				watch: {
 					"form.slug": function(t) {
@@ -960,7 +960,7 @@
 					}
 				},
 				mounted: function() {
-					document.title = "Team — Wink.", this.loadEntries()
+					document.title = "Team — MYBlog.", this.loadEntries()
 				}
 			},
 			s = n("KHd+"),
@@ -1471,7 +1471,7 @@
 					}
 				},
 				mounted: function() {
-					document.title = "Posts — Wink.", this.loadEntries(), this.loadResources(), this.watchFiltersChanges()
+					document.title = "Posts — MYBlog.", this.loadEntries(), this.loadResources(), this.watchFiltersChanges()
 				},
 				methods: {
 					loadResources: function() {
@@ -2446,7 +2446,7 @@
 				},
 				mounted: function() {
 					var t = this;
-					document.title = "Edit Post — Wink.", this.loadResources(), this.http().get("/api/posts/" + this.id).then(function(e) {
+					document.title = "Edit Post — MyBlog.", this.loadResources(), this.http().get("/api/posts/" + this.id).then(function(e) {
 						t.entry = _.cloneDeep(e.data.entry), t.fillForm(e.data.entry), t.ready = !0, t.registerSaveKeyboardShortcut()
 					}).catch(function(e) {
 						t.ready = !0
@@ -6804,7 +6804,7 @@
 				},
 				mounted: function() {
 					var t = this;
-					document.title = "Tag — Wink.", this.http().get("/api/tags/" + this.id).then(function(e) {
+					document.title = "Tag — MYBLog.", this.http().get("/api/tags/" + this.id).then(function(e) {
 						t.entry = e.data.entry, t.form.id = e.data.entry.id, "new" != t.id && (t.form.name = e.data.entry.name, t.form.slug = e.data.entry.slug, t.form.meta = {
 							meta_description: e.data.entry.meta.meta_description || "",
 							opengraph_title: e.data.entry.meta.opengraph_title || "",
@@ -6826,6 +6826,9 @@
 						this.debouncer(function() {
 							e.form.slug = e.slugify(t)
 						})
+					},
+					"form.icon": function(){
+						this.save()
 					},
 					"form.name": function(t) {
 						var e = this;
@@ -27414,7 +27417,7 @@
 					}
 				},
 				mounted: function() {
-					document.title = "Tags — Wink.", this.loadEntries()
+					document.title = "Tags — MYBlog.", this.loadEntries()
 				}
 			},
 			s = n("KHd+"),

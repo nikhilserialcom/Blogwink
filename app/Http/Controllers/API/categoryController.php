@@ -11,15 +11,15 @@ class categoryController extends Controller
 {
     public function category()
     {
-       $tags = WinkTag::all();
+       $tags = WinkTag::orderBY('name','asc')->get();
        return response($tags);
     }
 
-    public function footer_category()
-    {
-        $footer_tags = WinkTag::limit(5)->get();
-        return response($footer_tags);
-    }
+    // public function footer_category()
+    // {
+    //     $footer_tags = WinkTag::limit(5)->get();
+    //     return response($footer_tags);
+    // }
 
     public function categoryPost($tagName)
     {

@@ -19,50 +19,6 @@
                             </div>
                         </div>  
                     @endforeach
-                        {{-- <div class="img_and_details_div">
-                            <img src="{{ url('image/top.png') }}">
-                            <div class="first-txt">
-                                <div class="button">
-                                    <button>game</button>
-                                </div>
-                                <div class="title">
-                                    <h3>PUBG in India: A Comeback Story Worth Celebrating</h3>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="img_and_details_div">
-                            <img src="{{ url('image/profile.jpg') }}">
-                            <div class="first-txt">
-                                <div class="button">
-                                    <button>game</button>
-                                </div>
-                                <div class="title">
-                                    <h3>PUBG in India: A Comeback Story Worth Celebrating</h3>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="img_and_details_div">
-                            <img src="{{ url('image/Mi.jpg') }}">
-                            <div class="first-txt">
-                                <div class="button">
-                                    <button>game</button>
-                                </div>
-                                <div class="title">
-                                    <h3>PUBG in India: A Comeback Story Worth Celebrating</h3>
-                                </div>
-                            </div>
-                        </div>   
-                        <div class="img_and_details_div">
-                            <img src="{{ url('image/freefire.jpg') }}">
-                            <div class="first-txt">
-                                <div class="button">
-                                    <button>game</button>
-                                </div>
-                                <div class="title">
-                                    <h3>PUBG in India: A Comeback Story Worth Celebrating</h3>
-                                </div>
-                            </div>
-                        </div>                      --}}
                 </div>
             </div>
 
@@ -199,118 +155,8 @@
                                 August 20, 2022
                             </div>
                         </div>
-                    </div>
-
-                     <div class="card">
-                        <div class="img_div">
-                            <img src="{{ asset('image/top.png') }}" alt="">
-                        </div>
-
-                        <div class="button_text_user_div">
-                            <div class="btn_div">
-                                <button>Technology</button>
-                            </div>
-                            <h3>The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                        </div>
-
-                        <div class="users">
-                            <div class="user_img_name_div">
-                                <div class="user_img_div">
-                                    <img src="{{ asset('image/user.png') }}" alt="">
-                                </div>
-                                <span>
-                                    Tracey Wilson
-                                </span>
-                            </div>
-                            <div class="date_div">
-                                August 20, 2022
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="img_div">
-                            <img src="{{ asset('image/top.png') }}" alt="">
-                        </div>
-
-                        <div class="button_text_user_div">
-                            <div class="btn_div">
-                                <button>Technology</button>
-                            </div>
-                            <h3>The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                        </div>
-
-                        <div class="users">
-                            <div class="user_img_name_div">
-                                <div class="user_img_div">
-                                    <img src="{{ asset('image/user.png') }}" alt="">
-                                </div>
-                                <span>
-                                    Tracey Wilson
-                                </span>
-                            </div>
-                            <div class="date_div">
-                                August 20, 2022
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="img_div">
-                            <img src="{{ asset('image/top.png') }}" alt="">
-                        </div>
-
-                        <div class="button_text_user_div">
-                            <div class="btn_div">
-                                <button>Technology</button>
-                            </div>
-                            <h3>The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                        </div>
-
-                        <div class="users">
-                            <div class="user_img_name_div">
-                                <div class="user_img_div">
-                                    <img src="{{ asset('image/user.png') }}" alt="">
-                                </div>
-                                <span>
-                                    Tracey Wilson
-                                </span>
-                            </div>
-                            <div class="date_div">
-                                August 20, 2022
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="img_div">
-                            <img src="{{ asset('image/top.png') }}" alt="">
-                        </div>
-
-                        <div class="button_text_user_div">
-                            <div class="btn_div">
-                                <button>Technology</button>
-                            </div>
-                            <h3>The Impact of Technology on the Workplace: How Technology is Changing</h3>
-                        </div>
-
-                        <div class="users">
-                            <div class="user_img_name_div">
-                                <div class="user_img_div">
-                                    <img src="{{ asset('image/user.png') }}" alt="">
-                                </div>
-                                <span>
-                                    Tracey Wilson
-                                </span>
-                            </div>
-                            <div class="date_div">
-                                August 20, 2022
-                            </div>
-                        </div>
                     </div> --}}
-
             </div>
-
         </div>
 
         <div class="popular_articals ">
@@ -365,9 +211,7 @@
                             </div>
                         </div>
                     </div> --}}
-
             </div>
-
         </div>
 
     </div>

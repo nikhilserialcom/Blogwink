@@ -482,6 +482,7 @@ nav .inner_nav .search_lang_mode_div .search_box .sub_box .search_text .text p:h
     padding: 0 4rem;
     gap: 1.4rem;
     /* align-items: center; */
+    margin-top: 25px;
 }
 
 @media screen and (max-width: 1060px) {
@@ -655,7 +656,14 @@ nav .inner_nav .search_lang_mode_div .search_box .sub_box .search_text .text p:h
 
 } */
 
-.App .all_category_div .popular_articals .card_main .message {
+.App .all_category_div .popular_articals .message-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.App .all_category_div .popular_articals .message-box .message {
     font-size: 26px;
     font-weight: 700;
     margin: 100px auto;
