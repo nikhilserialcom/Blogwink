@@ -6805,7 +6805,7 @@
 				mounted: function() {
 					var t = this;
 					document.title = "Tag — MYBLog.", this.http().get("/api/tags/" + this.id).then(function(e) {
-						t.entry = e.data.entry, t.form.id = e.data.entry.id, "new" != t.id && (t.form.name = e.data.entry.name, t.form.slug = e.data.entry.slug, t.form.meta = {
+						t.entry = e.data.entry, t.form.id = e.data.entry.id, "new" != t.id && (t.form.name = e.data.entry.name, t.form.icon = e.data.entry.icon, t.form.slug = e.data.entry.slug, t.form.meta = {
 							meta_description: e.data.entry.meta.meta_description || "",
 							opengraph_title: e.data.entry.meta.opengraph_title || "",
 							opengraph_description: e.data.entry.meta.opengraph_description || "",
@@ -23784,7 +23784,33 @@
 							e.target.composing || (t.caption = e.target.value)
 						}
 					}
-				})]), t._v(" "), n("div", {
+				})]),t._v(" "), n("div", {
+					staticClass: "input-group"
+				}, [n("label", {
+					staticClass: "input-label"
+				},[t._v("Alt")]), t._v(" "), n("textarea", {
+					directives: [{
+						name: "model",
+						rawName: "v-model",
+						value: t.Alt,
+						expression: "Alt",
+					}],
+					ref: "Alt",
+					staticClass: "input",
+					attrs: {
+						rows: "2",
+						placeholder: "Add Alt to the image"
+					},
+					domProps: {
+						value: t.Alt
+					},
+					on: {
+						input: function(e) {
+							e.target.composing || (t.Alt = e.target.value)
+						}
+					}
+				})])
+				,t._v(" "), n("div", {
 					staticClass: "input-group"
 				}, [n("label", {
 					staticClass: "input-label"
@@ -24462,7 +24488,25 @@
 					attrs: {
 						d: "M0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm11 9l-3-3-6 6h16l-5-5-2 2zm4-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
 					}
-				})])]), t._v(" "), n("button", {
+				})])]), 
+				t._v(" "), n("button", {
+					on: {
+						click:function(e) {
+							t.openingHTMLEmbedder()
+						}
+					}
+				}, [n("svg", {
+					staticClass: "fill-current w-3",
+					attrs: {
+						xmlns: "http://www.w3.org/2000/svg",
+						viewBox: "0 0 20 20"
+					}
+				}, [n("path", {
+					attrs: {
+						d: "M 74.9 21.4 H 25.1 c -8.4 0 -15.1 6.8 -15.1 15.1 v 26.9 c 0 8.4 6.8 15.1 15.1 15.1 h 49.8 c 8.4 0 15.1 -6.8 15.1 -15.1 V 36.5 c 0 -8.3 -6.8 -15.1 -15.1 -15.1 Z M 39.5 62.3 V 37.7 l 21 12.3 Z",
+					},
+				})])])
+				,t._v(" "), n("button", {
 					on: {
 						click: function(e) {
 							t.openingHTMLEmbedder()

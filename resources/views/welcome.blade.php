@@ -11,7 +11,11 @@
                             <img src="{{ $slider->featured_image }}">
                             <div class="first-txt">
                                 <div class="button">
-                                    <button>game</button>
+                                    <button>
+                                        @foreach ($slider->tags as $tag)
+                                            {{ $tag->name }}
+                                        @endforeach
+                                    </button>
                                 </div>
                                 <div class="title">
                                     <h3>{{ $slider->title }}</h3>
