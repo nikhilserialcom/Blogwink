@@ -1,7 +1,7 @@
 <footer>
     <div class="main_footer">
         <div class="logo_detail_div">
-            <div class="footer_img_logo_div">
+            <div class="footer_img_logo_div footer_image">
             <a href="{{ route('user.name') }}"><img src="{{ url('image/logo.png') }}" alt=""></a>
             </div>
             <p>

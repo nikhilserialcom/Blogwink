@@ -11,6 +11,8 @@ const search_box =document.querySelector('.search_box');
 const body = document.querySelector('body');
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
+const images = document.querySelector('.logo a img');
+const footer_image = document.querySelector('.footer_image a img');
 // const social_icon = document.querySelectorAll('.social_icon .icon_div');
 
 // console.log(social_icon);
@@ -54,25 +56,29 @@ let func_for_dark_mode = () => {
     body.classList.add('dark');
     sun.classList.remove('clicked');
     moon.classList.add('clicked');
-    // images.src = "images/Group 3586.svg";
+    images.src = SchemeAndHttpHost + "/" + "image/Group 3586.svg";
+    footer_image.src = SchemeAndHttpHost + "/" + "image/Group 3586.svg";
 };
 let func_for_light_mode = () => {
     localStorage.setItem('theme', 'light');
     body.classList.remove('dark');
     moon.classList.remove('clicked');
     sun.classList.add('clicked');
-    // images.src = "images/logo.png";
+    images.src = SchemeAndHttpHost + "/" + "image/logo.png";
+    footer_image.src = SchemeAndHttpHost + "/" + "image/logo.png";
 };
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark');
     sun.classList.remove('clicked');
     moon.classList.add('clicked');
-    // images.src = "images/Group 3586.svg";
+    images.src = SchemeAndHttpHost + "/" + "image/Group 3586.svg";
+    footer_image.src = SchemeAndHttpHost + "/" + "image/Group 3586.svg";
 } else {
     body.classList.remove('dark');
     moon.classList.remove('clicked');
     sun.classList.add('clicked');
-    // images.src = "images/logo.png";
+    images.src = SchemeAndHttpHost + "/" + "image/logo.png";
+    footer_image.src = SchemeAndHttpHost + "/" + "image/logo.png";
 }
 sun.addEventListener('click', func_for_light_mode);
 moon.addEventListener('click', func_for_dark_mode);
